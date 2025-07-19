@@ -1,0 +1,342 @@
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}       
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\textit{\footnotesize{ #3}}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\textit{\footnotesize{#3}}}
+    \end{tabular*}
+    \vspace{-9mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\textit{\footnotesize{#3}}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} &\textit{\footnotesize{#3}}\vspace{-1mm}\\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}\\
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}{ #1} & {#2} & \hspace{0mm} \footnotesize{#3}
+\vspace{0mm}\\
+}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Hemesh Gupta} % Your Name
+\newcommand{\course}{B.E. -Computer Science} % Your Course
+\newcommand{\phone}{9649811633} % Your Phone Number
+\newcommand{\emaila}{hgpt185@gmail.com} %Email 1
+\newcommand{\github}{hgpt185} %Github
+\newcommand{\website}{} %Website
+\newcommand{\linkedin}{hemeshgupta} %linkedin
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{\href{https://github.com/hgpt185}{\faGithub \hspace{0.2mm} hgpt185} |  \href{https://www.linkedin.com/in/hemeshgupta/}{\faLinkedinSquare \hspace{0.2mm} \linkedin}
+    | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +91-\phone } 
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeEdu
+{Birla Institute of Technology and Science (BITS) Pilani, Rajasthan, India} 
+{Bachelor of Engineering in Computer Science} 
+{Aug 2020 - June 2024} %Event Dates
+{} % CGPA
+% \small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+% \hspace{-3.1mm}\textbf{ Computer Science: }{Deep Learning, Data Structures and Algorithms, Databases, Operating Systems, Computer Networks}\\}
+
+\vspace{-2.5mm}{
+\resumeItemListStart
+\hspace{-8mm}
+\footnotesize{\textbf{ Relevant Courses: }{Data Structures and Algorithms, Database Systems, Object Oriented Programming, Computer Networks, Operating Systems, Theory of Computation, Logic in Comp. Sci., Principles of Programming Languages, Compiler Construction, Computer Programming, Foundation of Data Science}}
+\resumeItemListEnd
+}
+
+\resumeSubHeadingListEnd
+\vspace{-8mm}
+
+\section{Technical Skills and Interests}
+
+\resumeSubHeadingListStart
+\small{
+\hspace{-1mm}
+\textbf{Languages \& Frameworks:} Java, C++, C, Python, Spring Boot \\
+\textbf{Databases \& Technologies:} Redis, Kafka, Docker, Kubernetes, Git/GitHub, CI/CD \\
+\textbf{Concepts:} OOP, System Design, Design Patterns, Concurrency, Operating Systems, Microservices 
+
+\resumeSubHeadingListEnd
+
+\vspace{-5mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+
+\resumeExp
+{Software Engineer, Salesforce}
+{\textit{Persistent Disk - Snapshots}}
+{July 2024 - Present}
+{}
+\resumeItemListStart
+\item[$\bullet$] Working as part of the \textbf{User Service team} in \textbf{Tableau Cloud}, delivered features like \textbf{Embargo Domain Blocking} and \textbf{Activity Logging}, enabling \$350M AOV migration to Tableau Cloud and ensuring PCI compliance.
+\item[$\bullet$] Removed high-risk \textbf{third-party vulnerabilities} and improved the overall security posture; developed a robust upload testing evidence framework covering multiple services to meet compliance standards.
+\item[$\bullet$] Contributed significantly to \textbf{Trustworthy Merge (Resync)}, \textbf{Decouple Email}, and \textbf{Multipart Upload} by designing and implementing APIs, adapter layer changes, and extensive E2E test automation with high coverage.
+\item[$\bullet$] Automated a \textbf{Slack notification framework} for test status updates, now actively used by 3+ teams in \textbf{Tableau Cloud}; enhanced the E2E framework with reusable utilities, improved reporting, and integration with CI/CD.
+\item[$\bullet$] Merged \textbf{60+ PRs}, fixed \textbf{10+ production bugs}, reviewed peer code for best practices, improved developer documentation, and actively contributed to on-call rotations and timely resolution of customer-facing issues.
+\resumeItemListEnd
+
+
+\vspace{1mm} 
+
+
+\resumeExp
+{Software Development Intern, Porter }
+{\textit{Persistent Disk - Snapshots}}
+{Jan 2024 - June 2024}
+{}
+\resumeItemListStart
+\item[$\bullet$] Developed 5+ new \textbf{APIs}, each addressing critical features like cashback, credit/debit transactions, and customer details
+\item[$\bullet$] Orchestrated the successful migration of more than 10 APIs from monolith to modern \textbf{Kotlin} microservices architecture
+\item[$\bullet$] Utilized advanced features of \textbf{Ktor} framework and \textbf{Dagger} for agile and streamlined API development
+\item[$\bullet$]  Leveraged a comprehensive suite of \textbf{AWS} services and \textbf{Datadog} monitoring for enhanced performance and reliability
+\resumeItemListEnd
+
+\vspace{1mm} 
+
+\resumeExp
+{Software Development Intern, Salesforce }
+{\textit{Persistent Disk - Snapshots}}
+{May 2023 - Jul 2023}
+{}
+\resumeItemListStart
+\item[$\bullet$]  Made an \textbf{orchestration engine} for \textbf{Tableau server instances} using \textbf{Python}, detecting and fixing drift in their configurations
+
+\item[$\bullet$] Automated \textbf{work item} creation, tagging relevant teams, and sending \textbf{Slack notifications} when a drift is detected
+\item[$\bullet$] Scheduled running the engine at regular intervals, also added functionality to fix the drift with a single click if needed
+\item[$\bullet$] Impact:\textbf{ 5\% time savings} for developers testing in the dev environment and \textbf{10\% reduction} in bugs in higher environments
+\resumeItemListEnd
+
+\vspace{1mm} 
+
+\resumeExp
+{Software Development Intern, Samsung R\&D Institute}
+{\textit{Safe-Chat Application}}
+{May 2022 - Jul 2022}
+{}
+\resumeItemListStart
+\item[$\bullet$] Made an \textbf{E2E test framework} for a web portal of Samsung using \textbf{Selenium WebDriver} and \textbf{Pytest framework} in \textbf{Python}
+\item[$\bullet$] Developed flexible, parameterized \textbf{test cases} with fixtures for comprehensive functionality testing across various scenarios
+\item[$\bullet$] Integrated robust \textbf{logging} and automated screenshot capture to track test progress and efficiently analyze potential errors
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+
+% \resumeProject
+% {Admin Dashboard - Web Development}
+
+% {Feb 2023 - May 2023} %Event Dates
+% {}
+% \vspace{-3mm} 
+% \resumeItemListStart
+% \item[$\bullet$] Developed a responsive and user-friendly admin dashboard using \textbf{React.js}, \textbf{Tailwind CSS}, and \textbf{Syncfusion components}
+% \item[$\bullet$] Implemented role-based access control, intuitive search, and real-time data updates for enhanced functionality
+% \item[$\bullet$] Features modern design, drag-and-drop customization, notifications, and seven charts for efficient data monitoring 
+
+
+% \resumeItemListEnd
+
+% \vspace{1mm} 
+
+
+\resumeProject
+{Google Docs Clone - Web Development} %Project Name
+
+{} %Event Dates
+{} %Website
+\vspace{-3mm} 
+\resumeItemListStart
+\item[$\bullet$] Developed a Google Docs clone utilizing \textbf{React.js} and \textbf{Quill.js} for frontend, and \textbf{Socket.io} and \textbf{MongoDB} for the backend
+\item[$\bullet$] Enabled collaboration by implementing \textbf{real-time}, concurrent document editing for multiple users simultaneously
+\item[$\bullet$] Facilitated streamlined document management by providing users with the ability to open and work on various documents 
+
+\resumeItemListEnd
+
+\vspace{1mm} 
+\resumeProject
+{Compiler Construction - Systems Development}
+
+{} %Event Dates
+{}
+\vspace{-3mm} 
+\resumeItemListStart
+\item[$\bullet$] Designed and built a complete compiler for a new programming language \textbf{ERPLAG} using \textbf{C} language
+\item[$\bullet$] Implemented a \textbf{lexical analyzer}, \textbf{syntax parser}, and \textbf{semantic analyzer} to ensure accurate parsing and code validation
+\item[$\bullet$] Achieved efficient parsing and error handling through modular design and adherence to compiler design principles
+\resumeSubHeadingListEnd
+
+\vspace{-1mm}
+\section{Positions of Responsibility}
+\vspace{0.2mm}
+
+\resumeSubHeadingListStart
+
+\small{
+
+\textbf{Teaching Assistant - Data Structures and Algorithms course} \hfill \textit{Jan 2023 - May 2023}
+\newline
+Mentored \textbf{300+ students} as a TA for DSA course (CS F211) - BITS Pilani, providing comprehensive support, clarifying concepts, and ensuring seamless execution of course evaluations for accurate student assessment and growth
+\vspace{2mm}
+\newline
+
+\textbf{Core Member - Google Developer Students Club} \hfill \textit{Jan 2022 - May 2023}
+\newline
+Pioneered the organization of \textbf{tech fests} and \textbf{programming competitions} at the BITS Pilani club, orchestrating impactful events and mentoring juniors to cultivate their growth and proficiency in competitive programming skills
+\newline
+}
+\vspace{-8.5mm}
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+% \section{EXTRA CURRICULAR ACTIVITIES}
+% \vspace{0.2mm}
+
+% \resumeSubHeadingListStart
+
+
+% \small{
+
+% \textbf{Competitive Programming} \hfill \textit{}
+% \newline
+% Earned a \textbf{4-star} rating on Codechef and attained \textbf{Specialist} status on Codeforces, reflecting a commitment to advancing problem-solving skills through dedicated practice and learning
+% \newline
+% }
+% \vspace{-8.5mm}
+
+% \resumeSubHeadingListEnd
+
+%-----------SCHOLARSHIP-----------------
+% \section{SCHOLARSHIPS}
+% \vspace{0.2mm}
+
+% \resumeSubHeadingListStart
+
+
+% \small{
+
+% \textbf{Academic Scholarship | BITS PILANI} \hfill \textit{}
+% \newline
+% Awarded the \textbf{BITS Merit Scholarship} for consistently ranking in the \textbf{top 3\%} of over 1,000 students
+
+% \vspace{2mm}
+
+% \vspace{-8.5mm}
+
+% \resumeSubHeadingListEnd
+
+% \end{tabular*}}
+
+% \vspace{-2.5mm}
+
+
+%-------------------------------------------
+\end{document}
